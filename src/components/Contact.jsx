@@ -34,14 +34,11 @@ const Contact = () => {
     let serviceId = "";
     let templateId = "";
     let publicKey = "";
-    if (import.meta.env.DEV) {
-      serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-      templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-      publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
-    } else {
-      // Todo: figure this out
-    }
-    console.log(serviceId, templateId, publicKey);
+
+    serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
     emailjs
       .send(
         serviceId,
