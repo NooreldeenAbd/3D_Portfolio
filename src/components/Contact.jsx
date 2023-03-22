@@ -31,10 +31,21 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    let serviceId = "";
+    let templateId = "";
+    let publicKey = "";
+    if (import.meta.env.DEV) {
+      serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+      templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+      publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+    } else {
+      // Todo: figure this out
+    }
+    console.log(serviceId, templateId, publicKey);
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "JavaScript Mastery",
@@ -42,7 +53,7 @@ const Contact = () => {
           to_email: "sujata@jsmastery.pro",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then(
         () => {
