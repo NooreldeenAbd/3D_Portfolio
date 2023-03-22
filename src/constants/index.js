@@ -8,21 +8,19 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    sql,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    csharp,
+    vue,
+    momentm,
+    aurora,
+    camps,
     threejs,
+    github,
+    linkedin,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +40,20 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Frontend Developer",
         icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "React Native Developer",
+        icon: mobile,
+    },
+
+    {
+        title: "Electrical Engineering",
         icon: creator,
     },
 ];
@@ -81,10 +80,6 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
         name: "Tailwind CSS",
         icon: tailwind,
     },
@@ -105,66 +100,44 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "vue",
+        icon: vue,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "csharp",
+        icon: csharp,
+    },
+    {
+        name: "sql",
+        icon: sql,
     },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Embedded Software Developer",
+        company_name: "Aurora Wireless Networks",
+        icon: aurora,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: " May 2020 – September 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Managed small projects of 2-3 people by drafting project plans, budgets, and schedules as well as minimizing slippage by identifying risks and coming up with mitigation plans.",
+            "Designed, tested, and debugged various software programs ranging from PC apps to embedded firmware while collaborating with 1-2 other developers.",
+            "Improved on the existing long distance communication system by adding TCP/IP features. The system could be found and queried over Wi-Fi.",
         ],
     },
     {
         title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        company_name: "Momentm Software (formally Tripspark)",
+        icon: momentm,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "May 2022 – Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Working as part of the medical growth team to develop new products, which facilitated the non-emergency medical transport of 500,000 patients across the U.S. per year.",
+            "Developed  and maintained web applications using technologies such as TypeScript, C#, Vue, and .NET.",
+            "Utilized Agile methodologies along with Git to collaborate and execute projects within a team of 4 other developers.",
+            "Investigated and fixed critical and major bugs within new and legacy codebase.",
+            "Participated in code reviews and contributed to the development of best practices.",
         ],
     },
 ];
@@ -198,12 +171,12 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Camps",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "First REAL project. A Website that allowed users to signup and post about their favorite camp grounds. Each campground would be displayed on a map and could be rated and reviewed by other users.",
         tags: [
             {
-                name: "react",
+                name: "ejs",
                 color: "blue-text-gradient",
             },
             {
@@ -211,55 +184,15 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "bootstrap",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: camps,
+        source_code_link: "https://github.com/NooreldeenAbd/Camping_Website",
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socialLinks = [{ id: 0, link: 'https://github.com/NooreldeenAbd', image: github, alt: 'github' }, { id: 1, link: 'https://www.linkedin.com/in/nooreldeen-a-3a9285b8/', image: linkedin, alt: 'linkedin' }]
+
+export { services, technologies, experiences, testimonials, projects, socialLinks };

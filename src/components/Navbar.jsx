@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { navLinks, socialLinks } from "../constants";
+import { github, linkedin, menu, close, me } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -20,7 +20,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contained" />
+          <img
+            src={me}
+            alt="logo"
+            className="w-20 h-20 object-contained rounded-full"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Nooreldeen &nbsp;
             <span className="sm:block hidden">Full-Stack&nbsp;Dev</span>
@@ -36,6 +40,17 @@ const Navbar = () => {
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+          {socialLinks.map((link) => (
+            <li key={link.id}>
+              <a href={link.link} target="_blank">
+                <img
+                  src={link.image}
+                  alt={link.alt}
+                  className="w-7 h-7 object-contained"
+                />
+              </a>
             </li>
           ))}
         </ul>
@@ -65,6 +80,18 @@ const Navbar = () => {
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+
+              {socialLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link} target="_blank">
+                    <img
+                      src={link.image}
+                      alt={link.alt}
+                      className="w-7 h-7 object-contained rounded-full"
+                    />
+                  </a>
                 </li>
               ))}
             </ul>

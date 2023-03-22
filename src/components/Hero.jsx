@@ -1,13 +1,36 @@
-import React from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-height: 550px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute index-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} min-h-[500px]  absolute index-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
@@ -19,12 +42,11 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Nooreldeen</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            I develop full stack applications for{" "}
-            <br className="sm:block hidden" /> non emergency medical transport
+            I develop full stack applications
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      {!isMobile && <ComputersCanvas />}
 
       <div className="absolute sm:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
