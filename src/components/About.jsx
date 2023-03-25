@@ -41,8 +41,8 @@ const About = () => {
         and expertise in frameworks like React, Vue, and .Net. I'm a team player
         who easily collaborates with others to create efficient, scalable, and
         user-friendly solutions that solve real-world problems. I'm also a quick
-        learner who was able to seamless transition from my degree in electrical
-        engineering to the field of software.
+        learner who was able to seamlessly transition from my degree in
+        electrical engineering to the field of software.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
