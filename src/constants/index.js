@@ -18,6 +18,7 @@ import {
     momentm,
     aurora,
     camps,
+    jobFinder,
     threejs,
     github,
     linkedin,
@@ -190,6 +191,27 @@ const projects = [
         ],
         image: camps,
         source_code_link: "https://github.com/NooreldeenAbd/Camping_Website",
+    },
+    {
+        name: "Job Finder",
+        description:
+            "First REAL project. A Website that allowed users to signup and post about their favorite camp grounds. Each campground would be displayed on a map and could be rated and reviewed by other users.",
+        tags: [
+            {
+                name: "React Native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "rest-api",
+                color: "green-text-gradient",
+            },
+            {
+                name: "expo",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobFinder,
+        source_code_link: "https://github.com/NooreldeenAbd/Job_Finder",
     },
 ];
 

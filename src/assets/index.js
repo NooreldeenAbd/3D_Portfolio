@@ -27,6 +27,7 @@ import momentm from "./company/momentm.png";
 import aurora from "./company/aurora.png";
 
 import camps from "./projects/camps.png";
+import jobFinder from "./projects/jobFinder.png";
 
 export {
   me,
@@ -55,4 +56,5 @@ export {
   momentm,
   aurora,
   camps,
+  jobFinder,
 };
