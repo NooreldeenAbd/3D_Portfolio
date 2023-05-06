@@ -195,7 +195,7 @@ const projects = [
     {
         name: "Job Finder",
         description:
-            "First REAL project. A Website that allowed users to signup and post about their favorite camp grounds. Each campground would be displayed on a map and could be rated and reviewed by other users.",
+            "Mobile application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
         tags: [
             {
                 name: "React Native",
