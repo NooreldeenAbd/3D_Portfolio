@@ -22,7 +22,12 @@ import threejs from "./tech/threejs.svg";
 import csharp from "./tech/csharp.png";
 import vue from "./tech/vue.png";
 import sql from "./tech/sql.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
+import dotnet from "./tech/dotnet.png";
+import docker from "./tech/docker.png";
 
+import covalence from "./company/covalence.png";
 import momentm from "./company/momentm.png";
 import aurora from "./company/aurora.png";
 
@@ -42,6 +47,10 @@ export {
   css,
   vue,
   sql,
+  python,
+  java,
+  dotnet,
+  docker,
   git,
   linkedin,
   html,
@@ -53,6 +62,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  covalence,
   momentm,
   aurora,
   camps,
