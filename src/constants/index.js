@@ -97,43 +97,41 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Software Developer",
+        title: "Software Engineer",
         company_name: "Covalence Inc.",
         icon: covalence,
         iconBg: "#E6DEDD",
         date: "June 2023 – Present",
         points: [
-            'Delivered impactful presentations to senior executives and stakeholders, effectively communicating findings and recommendations. ',
-            'Collaborate closely with both internal and external client representatives to gather and analyze requirements and business specifications for a custom law enforcement application, ensuring alignment with client needs.',
-            'Provide guidance and recommendations to internal teams on industry best practices and commonly used software stacks, promoting efficient and effective development processes.',
-            "Enhance several departments' productivity by automating tasks for coworkers utilizing custom Python scripts.",
-            "Streamline the development workflow by introducing Agile and Jira as well as creating CI/CD pipelines hosted on Azure DevOps.",
-            "Wrote custom plugin rules in Java for pre-existing HCM and WFM software."
+            'Delivered impactful presentations to senior executives and stakeholders, effectively communicating findings and recommendations.',
+            'Collaborate closely with both internal and external representatives to gather business requirements to build a custom law enforcement application for the Toronto Police using TypeScript, C#, Vue, and .NET, and ensure alignment with client needs.',
+            'Provided guidance on industry best practices and commonly used software stacks, promoting efficient and effective development processes.',
+            'Streamlined the development workflow by introducing Agile and Jira as well as creating CI/CD pipelines hosted on Azure DevOps.',
+            'Wrote custom plugin rules in Java for pre-existing HCM and WFM software and automated tasks using Python.'
         ],
     },
     {
-        title: "Full stack Developer",
+        title: "Full Stack Engineer",
         company_name: "Momentm Software",
         icon: momentm,
         iconBg: "#E6DEDD",
         date: "May 2022 – June 2023",
         points: [
-            'Demonstrated expertise in full-stack development as part of the Medical Growth team,  creating and maintaining three distinct mobile and web applications, leveraging technologies including TypeScript, C#, Vue, and .NET which enabled the non-emergency medical transport of 3.2 million patients annually across the United States.',
-            'Employed Git and Agile methodologies for seamless collaboration within a multidisciplinary team of five.',
+            'Demonstrated expertise in full-stack development as part of the Medical Growth team, creating and maintaining three distinct mobile and web applications, leveraging technologies including TypeScript, C#, Vue, and .NET which enabled the non-emergency medical transport of 3.2 million patients annually across the United States.',
             'Assumed responsibility for identifying and resolving critical and major issues within both new and legacy codebases, ensuring the stability and reliability of products.',
-            'Aided to better the development workflow by introducing Docker, which helped three new colleagues get set up more quickly.'
+            'Aided to better the development workflow by introducing Docker, which helped three new colleagues get set up faster.',
         ],
     },
     {
-        title: "Embedded Software Developer Intern",
+        title: "Software Developer Intern",
         company_name: "Aurora Wireless Networks",
         icon: aurora,
         iconBg: "#E6DEDD",
         date: " May 2020 – September 2021",
         points: [
-            'Managed small projects of 2-3 people by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
-            'Collaborated with 1-2 other developers to design, test, and debug various software programs, ranging from PC apps to embedded firmware.',
-            'Contributed to improving an existing long-distance communication system by adding a Wi-Fi stack, enabling the system to be discovered and queried over a local network.'
+            'Managed small projects by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
+            'Collaborated with developers to design, test, and debug various software programs, ranging from UI using React to embedded programs using C++.',
+            'Contributed to improving an existing long-distance communication system by adding a Wi-Fi stack, enabling the system to be discovered and queried over a local network.',
         ],
     }
 ];
