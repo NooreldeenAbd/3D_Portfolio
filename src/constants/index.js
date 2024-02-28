@@ -35,8 +35,8 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "experience",
+        title: "Experience",
     },
     {
         id: "contact",
@@ -52,6 +52,10 @@ const services = [
     {
         title: "Backend Developer",
         icon: backend,
+    },
+    {
+        title: "Mobil Developer",
+        icon: mobile,
     },
 ];
 
@@ -75,6 +79,10 @@ const technologies = [
     {
         name: "Vue",
         icon: vue,
+    },
+    {
+        name: 'React',
+        icon: reactjs,
     },
     {
         name: ".NET",
@@ -103,34 +111,34 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "June 2023 – Present",
         points: [
-            'Delivered impactful presentations to senior executives and stakeholders, effectively communicating findings and recommendations.',
-            'Collaborate closely with both internal and external representatives to gather business requirements to build a custom law enforcement application for the Toronto Police using TypeScript, C#, Vue, and .NET, and ensure alignment with client needs.',
+            'Demonstrated leadership as part of the special projects team by delivering impactful presentations to senior executives and stakeholders, effectively communicating findings and recommendations.',
+            'Collaborated closely with both internal and external representatives to gather business requirements to architect and build a custom law enforcement application for the Toronto Police using TypeScript, C#, React, and .NET, and ensure alignment with client needs.',
             'Provided guidance on industry best practices and commonly used software stacks, promoting efficient and effective development processes.',
             'Streamlined the development workflow by introducing Agile and Jira as well as creating CI/CD pipelines hosted on Azure DevOps.',
-            'Wrote custom plugin rules in Java for pre-existing HCM and WFM software and automated tasks using Python.'
+            'Wrote custom plugin rules in Java for pre-existing HCM and WFM software and automated tasks using Python'
         ],
     },
     {
         title: "Full Stack Engineer",
-        company_name: "Momentm Software",
+        company_name: "TripSpark Software",
         icon: momentm,
         iconBg: "#E6DEDD",
         date: "May 2022 – June 2023",
         points: [
-            'Demonstrated expertise in full-stack development as part of the Medical Growth team, creating and maintaining three distinct mobile and web applications, leveraging technologies including TypeScript, C#, Vue, and .NET which enabled the non-emergency medical transport of 3.2 million patients annually across the United States.',
+            'Demonstrated expertise in full-stack development as part of the Medical Growth team, creating and maintaining three distinct mobile and web applications, leveraging technologies including TypeScript, C#, Vue, and .NET which enabled the non-emergency medical transport of 3.2 million patients daily across the United States.',
             'Assumed responsibility for identifying and resolving critical and major issues within both new and legacy codebases, ensuring the stability and reliability of products.',
             'Aided to better the development workflow by introducing Docker, which helped three new colleagues get set up faster.',
         ],
     },
     {
-        title: "Software Developer Intern",
+        title: "Software Developer",
         company_name: "Aurora Wireless Networks",
         icon: aurora,
         iconBg: "#E6DEDD",
-        date: " May 2020 – September 2021",
+        date: " May 2020 – May 2022",
         points: [
             'Managed small projects by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
-            'Collaborated with developers to design, test, and debug various software programs, ranging from UI using React to embedded programs using C++.',
+            'Managed small projects by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
             'Contributed to improving an existing long-distance communication system by adding a Wi-Fi stack, enabling the system to be discovered and queried over a local network.',
         ],
     }
