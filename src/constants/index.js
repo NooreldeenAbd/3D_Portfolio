@@ -111,12 +111,12 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "June 2023 – Present",
         points: [
-            'Demonstrated leadership as part of the special projects team by delivering impactful presentations to senior executives and stakeholders, effectively communicating findings and recommendations.',
-            'Collaborated closely with both internal and external representatives to gather business requirements to architect and build a custom law enforcement application for the Toronto Police using TypeScript, C#, React, and .NET, and ensure alignment with client needs.',
-            'Provided guidance on industry best practices and commonly used software stacks, promoting efficient and effective development processes.',
-            'Streamlined the development workflow by introducing Agile and Jira as well as creating CI/CD pipelines hosted on Azure DevOps.',
-            'Wrote custom plugin rules in Java for pre-existing HCM and WFM software and automated tasks using Python'
-        ],
+            'Built a case management application for the Toronto Police’s Violent Crimes unit using TypeScript, C#, Vue, .NET, and internal services.',
+            'Led technical design efforts in collaboration with team members and stakeholders, delivering 20+ impactful features to enhance the product’s value.',
+            'Set up Azure-based release pipelines utilizing Docker to deploy the app across Production, Test, and Development environments.',
+            'Designed new SQL Server database schemas and migrated legacy data to support advanced features and improve system maintainability.',
+            'Boosted API performance by 30% through optimization of SQL queries, business logic, and by introducing a caching layer.'
+        ]
     },
     {
         title: "Full Stack Engineer",
@@ -125,22 +125,23 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "May 2022 – June 2023",
         points: [
-            'Demonstrated expertise in full-stack development as part of the Medical Growth team, creating and maintaining three distinct mobile and web applications, leveraging technologies including TypeScript, C#, Vue, and .NET which enabled the non-emergency medical transport of 3.2 million patients daily across the United States.',
-            'Assumed responsibility for identifying and resolving critical and major issues within both new and legacy codebases, ensuring the stability and reliability of products.',
-            'Aided to better the development workflow by introducing Docker, which helped three new colleagues get set up faster.',
-        ],
+            'Supported the medical transport of 3.2 million patients daily across the U.S. as part of the medical growth team.',
+            'Developed a patient intake app using TypeScript, C#, React, and .NET, reducing average triage time by 60%.',
+            'Maintained a React Native mobile app that enabled drivers to manage and execute rides efficiently.',
+            'Maintained a Blazor-based patient portal, allowing patients to bypass call centers and book rides directly.',
+            'Designed user-friendly interfaces by creating mockups in Figma, participating in UX discussions, and gathering feedback from user testing.'
+        ]
     },
     {
         title: "Software Developer",
         company_name: "Aurora Wireless Networks",
         icon: aurora,
         iconBg: "#E6DEDD",
-        date: " May 2020 – May 2022",
+        date: " May 2020 – May 2021",
         points: [
-            'Managed small projects by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
-            'Managed small projects by drafting project plans, budgets, and schedules, effectively minimizing slippage by identifying risks and developing mitigation plans.',
-            'Contributed to improving an existing long-distance communication system by adding a Wi-Fi stack, enabling the system to be discovered and queried over a local network.',
-        ],
+            'Collaborated with a team of 3 developers to design, implement, and test features using Agile methodologies.',
+            'Enhanced a long-distance communication system by integrating a Wi-Fi stack, enabling direct data uploads to an AWS database.'
+        ]
     }
 ];
 
